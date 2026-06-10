@@ -1,0 +1,39 @@
+
+.footer {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(6, 7, 10, 0.6);
+  padding: 48px 0 40px;
+}
+.footer__inner { text-align: center; }
+.footer__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.footer__disclaimer {
+  max-width: 640px;
+  margin: 18px auto 0;
+  color: #6f7888;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+.footer__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 24px 0;
+}
+.footer__links a {
+  color: #aab2c0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+.footer__links a:hover { color: #00e599; }
+.footer__copy { color: #5b6473; font-size: 0.82rem; margin: 0; }

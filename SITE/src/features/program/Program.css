@@ -1,0 +1,103 @@
+
+.program__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 52px;
+}
+
+.module {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 28px;
+  padding: 28px 30px;
+  border-radius: 18px;
+  background: linear-gradient(165deg, rgba(18, 21, 29, 0.75), rgba(11, 13, 19, 0.75));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.module:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 229, 153, 0.3);
+  box-shadow: 0 30px 60px -40px rgba(0, 229, 153, 0.4);
+}
+
+.module__left { border-right: 1px solid rgba(255, 255, 255, 0.07); padding-right: 12px; }
+.module__n {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(120deg, #00e599, #5fa0ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.module__tag {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8b94a3;
+}
+
+.module__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 14px;
+  letter-spacing: -0.01em;
+}
+.module__bullets { list-style: none; margin: 0; padding: 0; }
+.module__bullets li {
+  display: flex;
+  gap: 10px;
+  color: #aab2c0;
+  line-height: 1.5;
+  padding: 6px 0;
+  font-size: 0.98rem;
+}
+.module__check { color: #00e599; font-weight: 700; }
+
+.program__bonus {
+  margin-top: 30px;
+  padding: 28px 30px;
+  border-radius: 18px;
+  border: 1px dashed rgba(0, 229, 153, 0.4);
+  background: rgba(0, 229, 153, 0.04);
+}
+.program__bonus-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  color: #00e599;
+  letter-spacing: 0.02em;
+}
+.program__bonus ul {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 32px;
+}
+.program__bonus li { color: #d4dae3; font-size: 0.98rem; }
+
+@media (max-width: 720px) {
+  .module {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .module__left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 0 0 14px;
+  }
+  .module__n { font-size: 2rem; }
+  .module__tag { margin-top: 0; }
+}
