@@ -34,7 +34,7 @@ function FinalCta() {
               <span className="cta__price-note">paiement unique · accès à vie</span>
             </div>
 
-            <a href="https://buy.stripe.com/8x27sL4kaa5Z7Pk60Z08g00" className="btn btn--primary btn--lg cta__btn">
+            <a href="https://buy.stripe.com/eVqbJ17wm91V9Xs1KJ08g01" className="btn btn--primary btn--lg cta__btn">
               Je rejoins Capital Libre →
             </a>
             <p className="cta__reassure">
